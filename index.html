@@ -1,0 +1,1568 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aster Consultants | Strategic HR Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+      body {
+        font-family: "Poppins", sans-serif;
+        scroll-behavior: smooth;
+      }
+
+      .bg-primary {
+        background-color: #f6b21b;
+      }
+
+      .text-primary {
+        color: #f6b21b;
+      }
+
+      .border-primary {
+        border-color: #f6b21b;
+      }
+
+      .hover\:bg-primary-dark:hover {
+        background-color: #e0a117;
+      }
+
+      .nav-link {
+        position: relative;
+      }
+
+      .nav-link:after {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 2px;
+        bottom: -2px;
+        left: 0;
+        background-color: #f6b21b;
+        transition: width 0.3s ease;
+      }
+
+      .nav-link:hover:after {
+        width: 100%;
+      }
+
+      .expertise-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+
+      .testimonial-card {
+        transition: all 0.3s ease;
+      }
+
+      .testimonial-card:hover {
+        transform: scale(1.03);
+      }
+
+      .floating-btn {
+        animation: float 3s ease-in-out infinite;
+      }
+
+      @keyframes float {
+        0% {
+          transform: translateY(0px);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+        100% {
+          transform: translateY(0px);
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-black text-white sticky top-0 z-50 shadow-lg">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <a href="#" class="text-2xl font-bold">
+            <span class="text-primary">ASTER</span> CONSULTANTS
+          </a>
+        </div>
+
+        <div class="hidden md:flex space-x-8">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#expertise" class="nav-link">Expertise</a>
+          <a href="#methodology" class="nav-link">Methodology</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+
+        <div class="md:hidden">
+          <button id="menu-toggle" class="text-white focus:outline-none">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div id="mobile-menu" class="hidden md:hidden bg-black pb-4 px-4">
+        <a href="#home" class="block py-2 nav-link">Home</a>
+        <a href="#about" class="block py-2 nav-link">About</a>
+        <a href="#expertise" class="block py-2 nav-link">Expertise</a>
+        <a href="#methodology" class="block py-2 nav-link">Methodology</a>
+        <a href="#contact" class="block py-2 nav-link">Contact</a>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-black text-white py-20 md:py-32">
+      <div class="absolute inset-0 bg-black opacity-70"></div>
+      <div class="container mx-auto px-4 relative z-10">
+        <div class="flex flex-col md:flex-row items-center">
+          <div class="md:w-1/2 mb-10 md:mb-0">
+            <h1 class="text-4xl md:text-6xl font-bold mb-6">
+              Strategic <span class="text-primary">Talent</span> Solutions
+            </h1>
+            <p class="text-xl mb-8">
+              Empowering organizations with insight-led, high-quality
+              recruitment solutions that drive growth and long-term success.
+            </p>
+            <div class="flex space-x-4">
+              <a
+                href="#contact"
+                class="bg-primary hover:bg-primary-dark text-black font-bold py-3 px-6 rounded-lg transition duration-300"
+              >
+                Get Started
+              </a>
+              <a
+                href="#about"
+                class="border border-white hover:bg-white hover:text-black text-white font-bold py-3 px-6 rounded-lg transition duration-300"
+              >
+                Learn More
+              </a>
+            </div>
+          </div>
+          <div class="md:w-1/2 flex justify-center">
+            <div class="relative w-full max-w-md">
+              <div
+                class="absolute -top-10 -left-10 w-32 h-32 bg-primary rounded-full opacity-20"
+              ></div>
+              <div
+                class="absolute -bottom-10 -right-10 w-32 h-32 bg-primary rounded-full opacity-20"
+              ></div>
+              <div
+                class="relative bg-white bg-opacity-10 backdrop-filter backdrop-blur-lg rounded-xl p-6 shadow-2xl border border-gray-700"
+              >
+                <h3 class="text-xl font-bold mb-4 text-primary">
+                  Why Choose Us?
+                </h3>
+                <ul class="space-y-3">
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                    <span>Specialized industry knowledge</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                    <span>Customized recruitment solutions</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                    <span>Access to top-tier talent</span>
+                  </li>
+                  <li class="flex items-start">
+                    <i class="fas fa-check-circle text-primary mt-1 mr-3"></i>
+                    <span>Reduced hiring risks</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            About <span class="text-primary">Aster Consultants</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Mumbai-based human resource placement firm delivering high-quality,
+            customized, and research-driven talent solutions.
+          </p>
+        </div>
+
+        <div class="flex flex-col md:flex-row items-center mb-16">
+          <div class="md:w-1/2 mb-10 md:mb-0 md:pr-10">
+            <h3 class="text-2xl font-bold mb-6">Our Story</h3>
+            <p class="text-gray-600 mb-6">
+              Founded in 2021 by Tarikaa Rajput, Aster Consultants was
+              established with a mission to redefine recruitment through a
+              personalized, insight-led approach.
+            </p>
+            <p class="text-gray-600 mb-6">
+              With deep expertise in the Banking, Financial Services, NBFC, MNC
+              and Real Estate sectors, we specialize in recruitment across all
+              levels — from Executive Leadership to Middle and Junior
+              Management.
+            </p>
+            <p class="text-gray-600">
+              Our approach is strategic, consultative, and tailored to meet the
+              unique hiring needs of every client. Whether you're scaling up,
+              transforming your team, or seeking niche expertise, we ensure
+              access to the best-fit talent that aligns with your business
+              goals.
+            </p>
+          </div>
+          <div class="md:w-1/2">
+            <div class="bg-gray-100 rounded-xl overflow-hidden shadow-lg">
+              <img
+                src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80"
+                alt="Team meeting"
+                class="w-full h-auto object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        <!-- Mission & Vision -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-md border-l-4 border-primary"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-bullseye text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold">Our Mission</h3>
+            </div>
+            <p class="text-gray-600">
+              Empowering organizations with insight-led, high-quality
+              recruitment solutions that drive growth and long-term success.
+            </p>
+          </div>
+
+          <div
+            class="bg-gray-50 p-8 rounded-xl shadow-md border-l-4 border-primary"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-eye text-white text-xl"></i>
+              </div>
+              <h3 class="text-xl font-bold">Our Vision</h3>
+            </div>
+            <p class="text-gray-600">
+              To be the most trusted and respected talent partner in the BFSI
+              and NBFC sectors — known for our strategic insight, service
+              excellence, and ability to deliver transformative hiring
+              solutions.
+            </p>
+          </div>
+        </div>
+
+        <!-- Founder Section -->
+        <div class="bg-gray-50 rounded-xl p-8 shadow-md">
+          <div class="flex flex-col md:flex-row items-center">
+            <div class="md:w-1/4 mb-6 md:mb-0 flex justify-center">
+              <div
+                class="w-48 h-48 rounded-full overflow-hidden border-4 border-primary"
+              >
+                <img
+                  src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80"
+                  alt="Tarikaa Rajput"
+                  class="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            <div class="md:w-3/4 md:pl-8">
+              <h3 class="text-2xl font-bold mb-2">
+                Meet the Founder –
+                <span class="text-primary">Tarikaa Rajput</span>
+              </h3>
+              <p class="text-gray-600 mb-4">
+                Tarikaa Rajput is the visionary founder of Aster Consultants,
+                established in 2021 with a mission to redefine recruitment
+                through a personalized, insight-led approach.
+              </p>
+              <p class="text-gray-600 mb-4">
+                With over 6 years of HR leadership experience at some of India's
+                most respected financial institutions — including Reliance
+                Mutual Fund, HDFC Bank, and JM Morgan Stanley — Tarikaa brings a
+                deep understanding of the BFSI and NBFC landscape.
+              </p>
+              <p class="text-gray-600">
+                Her career has been rooted in strategic talent acquisition,
+                leadership hiring, and organizational development, giving her
+                the perspective and expertise to recognize the real drivers of
+                business success: the right people in the right roles.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expertise Section -->
+    <section id="expertise" class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Our <span class="text-primary">Expertise</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Expertise That Aligns Talent With Business Vision
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-users text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              Comprehensive Hiring Across All Leadership Levels
+            </h3>
+            <p class="text-gray-600">
+              From C-Suite to Entry Level — We've Got You Covered with our
+              end-to-end talent acquisition solutions.
+            </p>
+          </div>
+
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-chess-queen text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              Executive to Junior: End-to-End Talent Acquisition
+            </h3>
+            <p class="text-gray-600">
+              Your Partner for Strategic, Tactical & Operational Talent needs
+              across all organizational layers.
+            </p>
+          </div>
+
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-chart-line text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              Full-Spectrum Hiring for the BFSI & NBFC Sectors
+            </h3>
+            <p class="text-gray-600">
+              Specialized recruitment solutions tailored specifically for
+              Banking, Financial Services and NBFC sectors.
+            </p>
+          </div>
+
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-bullseye text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              Targeted Recruitment for Every Organizational Layer
+            </h3>
+            <p class="text-gray-600">
+              Precision hiring strategies designed for each level of your
+              organization's hierarchy.
+            </p>
+          </div>
+
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-network-wired text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">
+              Built to Hire: Executive, Senior, Middle & Junior Talent
+            </h3>
+            <p class="text-gray-600">
+              Comprehensive solutions covering all levels of talent acquisition
+              with equal excellence.
+            </p>
+          </div>
+
+          <div
+            class="expertise-card bg-white p-8 rounded-xl shadow-md transition duration-300"
+          >
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-handshake text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-4">Strategic HR Partnerships</h3>
+            <p class="text-gray-600">
+              Long-term collaborations that go beyond recruitment to become true
+              HR partners for your business.
+            </p>
+          </div>
+        </div>
+
+        <!-- Core Values -->
+        <div class="bg-white rounded-xl shadow-lg p-8 core_values_wrapper">
+          <h3 class="text-2xl font-bold mb-8 text-center">
+            Our <span class="text-primary">Core Values</span>
+          </h3>
+
+          <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            <div class="flex items-start">
+              <div
+                class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1"
+                style="min-width: 30px"
+              >
+                <span class="font-bold">1</span>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Client-Centricity</h4>
+                <p class="text-gray-600">
+                  We put our clients at the heart of everything we do,
+                  delivering tailored solutions aligned with their unique goals.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1"
+                style="min-width: 30px"
+              >
+                <span class="font-bold">2</span>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Integrity & Transparency</h4>
+                <p class="text-gray-600">
+                  We build lasting relationships through honesty, ethical
+                  conduct, and open communication.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1"
+                style="min-width: 30px"
+              >
+                <span class="font-bold">3</span>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Excellence in Execution</h4>
+                <p class="text-gray-600">
+                  We are committed to high-quality delivery, attention to
+                  detail, and exceeding expectations in every engagement.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1"
+                style="min-width: 30px"
+              >
+                <span class="font-bold">4</span>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Industry Expertise</h4>
+                <p class="text-gray-600">
+                  We bring deep sector knowledge and research-backed insights to
+                  every search, ensuring informed and effective hiring
+                  decisions.
+                </p>
+              </div>
+            </div>
+
+            <div class="flex items-start">
+              <div
+                class="bg-primary text-white rounded-full w-8 h-8 flex items-center justify-center mr-4 mt-1"
+                style="min-width: 30px"
+              >
+                <span class="font-bold">5</span>
+              </div>
+              <div>
+                <h4 class="font-bold mb-2">Long-Term Partnerships</h4>
+                <p class="text-gray-600">
+                  We don't just fill positions—we build partnerships that foster
+                  sustained success and mutual growth.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Success Stories -->
+    <section class="py-20 bg-black text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Success <span class="text-primary">Stories</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-300">
+            Aster Consultants has successfully delivered high-impact recruitment
+            across various levels and functions, ensuring the best-fit
+            candidates for clients.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-user-tie text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Leadership Roles</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Chief Financial Officer (CFO)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Financial Controller (FC)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Chief Operating Officer (COO)</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Director – Private Banking Advisory</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-chart-pie text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Finance & Investment</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>DGM – Treasury</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Vice President – Investment & Banking Solutions</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>DVP – Institutional Sales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>AVP – Operations</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-cogs text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Operations & Strategy</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>AVP – Digital Transformation</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>AVP – Business Transformation</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>VP – Compliance</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Head – Quality Assurance</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-users-cog text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Human Resources & Sales</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Zonal Head – HR</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Regional Manager – Sales</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Regional Manager – PMS</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Area Manager – PMS</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-industry text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Industry-Specific Roles</h3>
+            </div>
+            <ul class="space-y-2 text-gray-300">
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Head – Ash Utilisation</span>
+              </li>
+              <li class="flex items-start">
+                <i class="fas fa-check text-primary mt-1 mr-2"></i>
+                <span>Various roles across AMCs, Banks, and Broking firms</span>
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="testimonial-card bg-gray-900 p-8 rounded-xl border border-gray-800"
+          >
+            <div class="flex items-center mb-4">
+              <div class="bg-primary p-3 rounded-full mr-4">
+                <i class="fas fa-award text-white"></i>
+              </div>
+              <h3 class="text-xl font-bold">Our Impact</h3>
+            </div>
+            <p class="text-gray-300">
+              From C-level executives to functional specialists, we place top
+              talent that drives success across organizations.
+            </p>
+            <p class="mt-4 font-bold text-primary">
+              — Precision Hiring. Proven Results.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="py-20 bg-primary">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Why Choose <span class="text-black">Aster Consultants?</span>
+          </h2>
+          <div class="w-24 h-1 bg-black mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg">
+            Partner with Aster Consultants for smart, strategic talent
+            acquisition that drives your business forward.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-brain text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Expertise</h3>
+            <p class="text-gray-600">
+              Specialized knowledge of your industry's talent needs and
+              challenges.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-puzzle-piece text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Customized Solutions</h3>
+            <p class="text-gray-600">
+              Recruitment strategies tailored to your unique business goals and
+              culture.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-user-tie text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Access to Top Talent</h3>
+            <p class="text-gray-600">
+              From C-level leaders to skilled specialists, we connect you with
+              the best.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-clock text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Faster, Quality Hiring</h3>
+            <p class="text-gray-600">
+              Efficient process reducing time-to-hire without compromising on
+              quality.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-shield-alt text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Lower Hiring Risks</h3>
+            <p class="text-gray-600">
+              Rigorous screening ensures the right cultural and skill fit for
+              your team.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-handshake text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Trusted Partnership</h3>
+            <p class="text-gray-600">
+              Strategic hiring advice for long-term growth and organizational
+              success.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-lock text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Confidential & Professional</h3>
+            <p class="text-gray-600">
+              Discreet handling of sensitive searches with high ethical
+              standards.
+            </p>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-lg">
+            <div
+              class="bg-primary bg-opacity-10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6"
+            >
+              <i class="fas fa-rocket text-primary text-2xl"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-3">Results-Driven Approach</h3>
+            <p class="text-gray-600">
+              We measure our success by your satisfaction and the impact of our
+              placements.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search Methodology -->
+    <section id="methodology" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Our Search <span class="text-primary">Methodology</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            A structured approach designed to ensure precision, efficiency, and
+            alignment with your unique business needs.
+          </p>
+        </div>
+
+        <div class="relative">
+          <!-- Vertical Line -->
+          <div
+            class="absolute left-1/2 h-full w-1 bg-primary transform -translate-x-1/2 hidden md:block"
+          ></div>
+
+          <!-- Steps -->
+          <div class="space-y-12">
+            <!-- Step 1 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div
+                class="md:w-1/2 md:pr-12 mb-8 md:mb-0 order-1 md:order-1 text-right"
+              >
+                <h3 class="text-2xl font-bold mb-4">
+                  Understanding Your Needs
+                </h3>
+                <p class="text-gray-600">
+                  We begin with a deep dive into your company's culture, goals,
+                  and the specific requirements of the role to create a
+                  customized hiring brief.
+                </p>
+              </div>
+              <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 md:ml-auto shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">1</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 2 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">2</span>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 order-1 md:order-2">
+                <h3 class="text-2xl font-bold mb-4">
+                  Targeted Research & Sourcing
+                </h3>
+                <p class="text-gray-600">
+                  Leveraging our extensive network and industry databases, we
+                  identify and engage potential candidates who match the desired
+                  profile and skillset.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 3 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div
+                class="md:w-1/2 md:pr-12 mb-8 md:mb-0 order-1 md:order-1 text-right"
+              >
+                <h3 class="text-2xl font-bold mb-4">
+                  Rigorous Screening & Assessment
+                </h3>
+                <p class="text-gray-600">
+                  Our multi-level evaluation process includes detailed
+                  interviews, skill assessments, and background verification to
+                  ensure candidate suitability.
+                </p>
+              </div>
+              <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 md:ml-auto shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">3</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 4 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">4</span>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 order-1 md:order-2">
+                <h3 class="text-2xl font-bold mb-4">
+                  Client Shortlisting & Presentation
+                </h3>
+                <p class="text-gray-600">
+                  We provide you with a curated shortlist of top candidates,
+                  complete with insights and recommendations for each.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 5 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div
+                class="md:w-1/2 md:pr-12 mb-8 md:mb-0 order-1 md:order-1 text-right"
+              >
+                <h3 class="text-2xl font-bold mb-4">
+                  Interview Facilitation & Feedback
+                </h3>
+                <p class="text-gray-600">
+                  We coordinate interviews and gather feedback to keep the
+                  process transparent, timely, and focused on the best fit.
+                </p>
+              </div>
+              <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 md:ml-auto shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">5</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Step 6 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div class="md:w-1/2 md:pr-12 order-2 md:order-1">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">6</span>
+                </div>
+              </div>
+              <div class="md:w-1/2 md:pl-12 mb-8 md:mb-0 order-1 md:order-2">
+                <h3 class="text-2xl font-bold mb-4">
+                  Offer Management & Onboarding Support
+                </h3>
+                <p class="text-gray-600">
+                  Beyond selection, we assist with offer negotiations and help
+                  smooth the onboarding process to ensure a successful
+                  transition.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 7 -->
+            <div class="relative flex flex-col md:flex-row items-center">
+              <div
+                class="md:w-1/2 md:pr-12 mb-8 md:mb-0 order-1 md:order-1 text-right"
+              >
+                <h3 class="text-2xl font-bold mb-4">
+                  Post-Placement Follow-Up
+                </h3>
+                <p class="text-gray-600">
+                  We maintain communication post-placement to ensure
+                  satisfaction for both client and candidate, reinforcing
+                  long-term success.
+                </p>
+              </div>
+              <div class="md:w-1/2 md:pl-12 order-2 md:order-2">
+                <div
+                  class="bg-primary rounded-full w-16 h-16 flex items-center justify-center mx-auto md:mx-0 md:ml-auto shadow-lg"
+                >
+                  <span class="text-white font-bold text-xl">7</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Job Openings -->
+    <section class="py-20 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Current <span class="text-primary">Job Openings</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-600">
+            Explore exciting career opportunities with leading organizations in
+            the BFSI sector.
+          </p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">
+                MNC Sales Development Representative
+              </h3>
+              <p class="text-white opacity-90">Ahmedabad, Pune</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                We're seeking dynamic sales professionals for a leading MNC with
+                opportunities in multiple locations.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">Broking Head – Operations</h3>
+              <p class="text-white opacity-90">Mumbai</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Leadership role for an experienced operations professional in
+                the broking industry.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">Bond Dealer</h3>
+              <p class="text-white opacity-90">Mumbai</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Specialist role for an experienced bond dealer with strong
+                market knowledge.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">Deputy Manager – Payroll</h3>
+              <p class="text-white opacity-90">Mumbai</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Mid-level payroll management position with a leading financial
+                services firm.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">Asset Management</h3>
+              <p class="text-white opacity-90">Multiple Locations</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Various roles available in asset management across different
+                experience levels.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+
+          <div class="bg-white rounded-xl shadow-md overflow-hidden">
+            <div class="bg-primary text-white p-6">
+              <h3 class="text-xl font-bold">
+                Senior Manager – Finance & Accounts
+              </h3>
+              <p class="text-white opacity-90">Mumbai</p>
+            </div>
+            <div class="p-6">
+              <p class="text-gray-600 mb-4">
+                Leadership role overseeing finance and accounting functions for
+                a growing firm.
+              </p>
+              <a
+                href="#contact"
+                class="inline-block bg-primary hover:bg-primary-dark text-black font-bold py-2 px-4 rounded transition duration-300"
+              >
+                Apply Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="text-center mt-12">
+          <p class="text-lg mb-6">
+            Don't see your ideal role listed? We may have unadvertised positions
+            that match your profile.
+          </p>
+          <a
+            href="#contact"
+            class="inline-block bg-black hover:bg-gray-800 text-white font-bold py-3 px-8 rounded-lg transition duration-300"
+          >
+            Submit Your CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-black text-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold mb-4">
+            Let's Start the <span class="text-primary">Conversation</span>
+          </h2>
+          <div class="w-24 h-1 bg-primary mx-auto mb-6"></div>
+          <p class="max-w-3xl mx-auto text-lg text-gray-300">
+            Transforming Workforces. Empowering Futures. Together.
+          </p>
+        </div>
+
+        <div class="flex flex-col lg:flex-row gap-12">
+          <div class="lg:w-1/2">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-lg">
+              <h3 class="text-2xl font-bold mb-6 text-primary">Contact Us</h3>
+
+              <form id="contactForm" class="space-y-6">
+                <div>
+                  <label for="name" class="block mb-2">Your Name</label>
+                  <input
+                    type="text"
+                    id="name"
+                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+
+                <div>
+                  <label for="email" class="block mb-2">Email Address</label>
+                  <input
+                    type="email"
+                    id="email"
+                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+
+                <div>
+                  <label for="phone" class="block mb-2">Phone Number</label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  />
+                </div>
+
+                <div>
+                  <label for="subject" class="block mb-2">Subject</label>
+                  <select
+                    id="subject"
+                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  >
+                    <option value="">Select a subject</option>
+                    <option value="recruitment">Recruitment Services</option>
+                    <option value="job-application">Job Application</option>
+                    <option value="partnership">Partnership Inquiry</option>
+                    <option value="other">Other</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="message" class="block mb-2">Your Message</label>
+                  <textarea
+                    id="message"
+                    rows="4"
+                    class="w-full bg-gray-800 border border-gray-700 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary"
+                  ></textarea>
+                </div>
+
+                <button
+                  type="submit"
+                  class="w-full bg-primary hover:bg-primary-dark text-black font-bold py-3 px-6 rounded-lg transition duration-300"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
+          </div>
+
+          <div class="lg:w-1/2">
+            <div class="bg-gray-900 rounded-xl p-8 shadow-lg h-full">
+              <h3 class="text-2xl font-bold mb-6 text-primary">
+                How to Reach Us
+              </h3>
+
+              <div class="space-y-8">
+                <div class="flex items-start">
+                  <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                    <i class="fa-solid fa-location-crosshairs"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-2">Our Location</h4>
+                    <p class="text-gray-300">Mumbai, Maharashtra, India</p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                    <i class="fa-solid fa-envelope"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-2">Email Us</h4>
+                    <p class="text-gray-300">
+                      <a
+                        href="mailto:careers@asterconsultants.in"
+                        class="hover:text-primary transition duration-300"
+                        >careers@asterconsultants.in</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="flex items-start">
+                  <div class="bg-primary bg-opacity-20 p-3 rounded-full mr-4">
+                    <i class="fa-solid fa-phone"></i>
+                  </div>
+                  <div>
+                    <h4 class="font-bold mb-2">Call Us</h4>
+                    <p class="text-gray-300">
+                      <a
+                        href="tel:+911234567890"
+                        class="hover:text-primary transition duration-300"
+                        >+91 12345 67890</a
+                      >
+                    </p>
+                  </div>
+                </div>
+
+                <div class="pt-6">
+                  <h4 class="font-bold mb-4 text-lg">Submit Your CV</h4>
+                  <p class="text-gray-300 mb-4">
+                    Looking for your next career move? Share your resume with us
+                    and get access to exclusive job opportunities.
+                  </p>
+                  <p class="text-gray-300 mb-2">
+                    <i class="fas fa-envelope text-primary mr-2"></i> Email Your
+                    CV:
+                    <a
+                      href="mailto:careers@asterconsultants.in"
+                      class="text-primary"
+                      >careers@asterconsultants.in</a
+                    >
+                  </p>
+                  <p class="text-gray-300 mb-2">
+                    <i class="fas fa-file text-primary mr-2"></i> Format: PDF or
+                    Word document preferred
+                  </p>
+                  <p class="text-gray-300">
+                    <i class="fas fa-tag text-primary mr-2"></i> Subject Line:
+                    "CV – [Your Name] – [Role/Area of Interest]"
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-black text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-6 md:mb-0">
+            <a href="#" class="text-2xl font-bold">
+              <span class="text-primary">ASTER</span> CONSULTANTS
+            </a>
+            <p class="text-gray-400 mt-2">
+              Strategic HR Solutions for the BFSI Sector
+            </p>
+          </div>
+
+          <div class="flex space-x-6 mb-6 md:mb-0">
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition duration-300"
+            >
+              <i class="fab fa-linkedin-in text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition duration-300"
+            >
+              <i class="fab fa-twitter text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition duration-300"
+            >
+              <i class="fab fa-facebook-f text-xl"></i>
+            </a>
+            <a
+              href="#"
+              class="text-gray-400 hover:text-primary transition duration-300"
+            >
+              <i class="fab fa-instagram text-xl"></i>
+            </a>
+          </div>
+
+          <div class="text-gray-400 text-sm">
+            <p>&copy; 2023 Aster Consultants. All rights reserved.</p>
+          </div>
+        </div>
+
+        <div
+          class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between"
+        >
+          <div class="grid grid-cols-2 md:grid-cols-4 gap-8 mb-6 md:mb-0">
+            <div>
+              <h4 class="text-white font-bold mb-4">Quick Links</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#home"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#expertise"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Expertise</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#methodology"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Methodology</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-white font-bold mb-4">Services</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Executive Search</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Leadership Hiring</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Mid-Level Recruitment</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Junior Hiring</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-white font-bold mb-4">Resources</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Blog</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Career Tips</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Industry Insights</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h4 class="text-white font-bold mb-4">Legal</h4>
+              <ul class="space-y-2">
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Privacy Policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Terms of Service</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="text-gray-400 hover:text-primary transition duration-300"
+                    >Cookie Policy</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Floating Contact Button -->
+    <div class="fixed bottom-8 left-8 z-50">
+      <a
+        href="#contact"
+        class="floating-btn bg-primary hover:bg-primary-dark text-black font-bold rounded-full w-16 h-16 flex items-center justify-center shadow-xl transition duration-300"
+      >
+        <i class="fas fa-envelope text-2xl"></i>
+      </a>
+    </div>
+
+    <script>
+      // Mobile menu toggle
+      document
+        .getElementById("menu-toggle")
+        .addEventListener("click", function () {
+          const menu = document.getElementById("mobile-menu");
+          menu.classList.toggle("hidden");
+        });
+
+      // Form submission
+      document
+        .getElementById("contactForm")
+        .addEventListener("submit", function (e) {
+          e.preventDefault();
+
+          // Get form values
+          const name = document.getElementById("name").value;
+          const email = document.getElementById("email").value;
+          const phone = document.getElementById("phone").value;
+          const subject = document.getElementById("subject").value;
+          const message = document.getElementById("message").value;
+
+          // Here you would typically send the data to a server
+          // For this example, we'll just show an alert
+          alert(
+            `Thank you, ${name}! Your message has been received. We'll contact you soon at ${email} or ${phone}.`
+          );
+
+          // Reset form
+          this.reset();
+        });
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          const targetId = this.getAttribute("href");
+          const targetElement = document.querySelector(targetId);
+
+          if (targetElement) {
+            window.scrollTo({
+              top: targetElement.offsetTop - 80,
+              behavior: "smooth",
+            });
+
+            // Close mobile menu if open
+            const mobileMenu = document.getElementById("mobile-menu");
+            if (!mobileMenu.classList.contains("hidden")) {
+              mobileMenu.classList.add("hidden");
+            }
+          }
+        });
+      });
+
+      // Scroll to top button
+      const scrollToTopBtn = document.createElement("div");
+      scrollToTopBtn.innerHTML = '<i class="fas fa-arrow-up"></i>';
+      scrollToTopBtn.className =
+        "fixed bottom-8 right-8 z-50 bg-black text-white rounded-full w-12 h-12 flex items-center justify-center shadow-xl cursor-pointer opacity-0 invisible transition-all duration-300";
+      document.body.appendChild(scrollToTopBtn);
+
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.pageYOffset > 300) {
+          scrollToTopBtn.classList.remove("opacity-0", "invisible");
+          scrollToTopBtn.classList.add("opacity-100", "visible");
+        } else {
+          scrollToTopBtn.classList.remove("opacity-100", "visible");
+          scrollToTopBtn.classList.add("opacity-0", "invisible");
+        }
+      });
+    </script>
+  </body>
+</html>
